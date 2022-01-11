@@ -1,9 +1,15 @@
-flex hello.l
-bison -dy hello.y
-gcc lex.yy.c y.tab.c -o hello.exe
-
-
-
+#command for only lex file run
 lex hw.l
 cc lex.yy.c -ll
 ./a.out
+
+#command for lex yacc file run
+lex cal.l
+yacc cal.y
+cc y.tab.c -ly -ll
+./a.out
+
+----command for windows terminal
+flex hello.l
+bison -dy hello.y
+gcc lex.yy.c y.tab.c -o hello.exe
